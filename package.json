@@ -1,0 +1,11 @@
+{
+  "name": "com.mirrro.vectorfieldbaker",
+  "version": "1.0.0",
+  "displayName": "Vector Field Baker",
+  "description": "This package provides an baker to create a vector field of game objects in a scene",
+  "unity:": "2022.3",
+  "author": {
+    "name": "Miro Kroslin",
+    "url": "https://github.com/Mirrro"
+  }
+}
