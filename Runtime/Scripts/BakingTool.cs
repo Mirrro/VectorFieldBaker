@@ -20,6 +20,11 @@ namespace Mirrro.VectorFieldBaker
 
         private void OnDrawGizmosSelected()
         {
+            if (cellSize < 0)
+            {
+                return;
+            }
+            
             var debugInfo = Baker.Preview(bounds, cellSize);
         
             Gizmos.color = Color.white;

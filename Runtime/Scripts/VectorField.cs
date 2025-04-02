@@ -14,6 +14,16 @@ namespace Mirrro.VectorFieldBaker
     
         private void OnDrawGizmosSelected()
         {
+            if (vectorFieldAsset == null)
+            {
+                return;
+            }
+
+            if (mesh == null)
+            {
+                return;
+            }
+            
             foreach (var vectorFieldEntry in vectorFieldAsset.entries)
             {
                 Gizmos.color = new Color(vectorFieldEntry.direction.x, vectorFieldEntry.direction.y, vectorFieldEntry.direction.z);
